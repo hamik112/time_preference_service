@@ -1,0 +1,17 @@
+*.pyc
+*.pyo
+data/*.tdb
+python2.7.core
+.webassets-cache
+.cache
+Uploads/
+*.swp
+uploads/
+virtualenv/
+*.log
+combined.js
+combined.css
+static/js/core.js
+*.rdb
+.idea
+.DS_Store
