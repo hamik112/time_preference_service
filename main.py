@@ -24,9 +24,11 @@ USER_NOTIFICATION_TIME_RANGE = 10800   # #4 hours
 
 
 # Returns returns time preference for user
-@application.route('/get_time_preference/', methods=["GET"])
+@application.route('/get_time_preference/', methods=["POST"])
 def get_user_data():
-    users = request.args.get("users")
+    users = request.form.get("users")
+    start_time = request.form.get("start-time")
+    end_time = request.form.get("end-time")
     if users:
         users = users.split(',')
         user_time_preference_list = []
