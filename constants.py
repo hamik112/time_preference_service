@@ -1,1 +1,2 @@
-
+USER_NOTIFICATION_TIME_RANGE = 10800   # #4 hours
+KEY_PREFIX_LAST_USER_NOTIFICATION_AT = '_last_user_notification_'
